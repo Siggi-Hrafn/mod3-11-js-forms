@@ -181,6 +181,26 @@ input {
     padding: 1.2rem;
 }
 
+.failure-icon,
+.error {
+    color: rgb(230, 22, 22);
+}
+
+.success-icon {
+    color: rgb(1, 120, 1);
+}
+
+.failure-icon,
+.success-icon {
+    right: 0;
+    opacity: 0;
+}
+
+.error {
+    font-size: .8rem;
+    margin-top: .3rem;
+  }
+
   form >button {
     border: 0;
     border-radius: .4rem;
@@ -189,7 +209,7 @@ input {
     background-color: #1F3C4D;
     font-weight: 600;
     text-transform: uppercase;
-    
+    transition: all 0.2s ease;
   }
 
   form >button:hover{
