@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
     <title>Coding with accessibility in mind</title>
 </head>
 <body>
@@ -70,24 +75,26 @@
             </div>
             <div class="contact-form">
                 <form action="" aria-label="Send us an enquiery">
-                    <h3>Send us a request</h3>
+                <h3>Send us a request</h3>
+                <div class="input-container">
+                    <label for id="fname">Your Name</label>
+                    <i class="input-icon far fa-user"></i>
                     <input 
                         type="text" 
                         id="fname"
                         name="fname"
-                        aria-label="First name" 
-                        placeholder="Enter your first name"
+                        aria-label="Your name" 
+                        placeholder="Enter your name"
                         required
-                        >
-                        
-                    <input 
-                        type="text" 
-                        id="lname"
-                        name="lname"
-                        aria-label="Last name" 
-                        placeholder="Enter your last name"
-                        required
-                        >
+                        />
+                    <i class="info-icon fas fa-exclamation-circle failure-icon i-end"></i>
+                    <i class="info-icon far fa-check-circle success-icon i-end"></i>
+                    <div class="error"></div>
+                </div> 
+                
+                <div class="input-container">
+                    <label for="email">Your email</label>
+                    <i class="input-icon far fa-envelope"></i>
                     <input 
                         class="required"
                         type="email" 
@@ -96,9 +103,18 @@
                         autocomplete="email"
                         autocapitalize="off" 
                         spellcheck="false"
-                        placeholder="Enter your e-mail"
+                        placeholder="myemail@email.com"
                         required
-                        >
+                        />
+                    <i class="info-icon fas fa-exclamation-circle failure-icon"></i>
+                    <i class="info-icon far fa-check-circle success-icon"></i>
+                    <div class="error"></div>
+                    </div>
+
+                <div class="input-container">
+                    <label for="subject">Subject</label>
+                    <i class="input-icon far fa-comment-alt"></i>
+
                     <input 
                         class="required"
                         type="text" 
@@ -106,8 +122,15 @@
                         name="subject" 
                         placeholder="Subject"
                         required
-                        >
-                    <label for id="message">Message: </label><br>
+                        />
+                        <i class="info-icon fas fa-exclamation-circle failure-icon"></i>
+                        <i class="info-icon far fa-check-circle success-icon"></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-container">
+                    <label for="message">Message:</label>
+                    <i class="input-icon far fa-comment-alt"></i>
                     <input 
                         class="required textarea"
                         type="textarea "
@@ -116,9 +139,13 @@
                         name="message" 
                         placeholder=""
                         required
-                        >
+                        />
+                        <i class="info-icon fas fa-exclamation-circle failure-icon"></i>
+                        <i class="info-icon far fa-check-circle success-icon"></i>
+                        <div class="error"></div>
+                        </div>
 
-                    <button class="align-right">Send request</button>
+                    <button class="align-right" type="submit">Send request</button>
                 </form>
 
             </div>

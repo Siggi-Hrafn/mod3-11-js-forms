@@ -144,6 +144,7 @@ footer li>a {
   .contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 1px solid #1F3C4D;
     border-radius: .6rem;
     min-width: 50%;
@@ -151,13 +152,34 @@ footer li>a {
   }
 
 
-  form>input {
+input {
     min-width: 100%;
     padding: .8rem;
-    margin-bottom: 2rem;
+    padding-left: 2.6rem;;
     border-radius: .4rem;
-    text-align: start;
+    margin: .4rem 0;
   }
+
+  input:focus {
+    border: 2px solid #f2796e;
+  }
+
+.input-container {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+.info-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: -3rem;
+    padding: 1.2rem;
+}
+
+.input-icon {
+    position: absolute;
+    padding: 1.2rem;
+}
 
   form >button {
     border: 0;
@@ -176,10 +198,10 @@ footer li>a {
     color: #1F3C4D;
   }
 
-form >label {
+label {
     display: block;
-    margin-bottom: -.6rem;
-
+    margin-bottom: .2rem;
+    font-size: 1rem;
 }
 
 .textarea {
