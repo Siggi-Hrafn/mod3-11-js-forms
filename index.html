@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding with accessibility in mind</title>
+</head>
+<body>
+    <header>
+    <div class="container flex padding-header">
+        <div class="siteID">
+            <img src="./img/accessibility-logo.jpg" alt="SiteID">
+        </div>
+        <div class="navbox">
+            <nav class="mainmenu" role="navigation" aria-label="primary">
+                <ul class="navcontainer flex ">
+                    <li class="menuitem" role="button">
+                        <a href="#">Home</a> 
+                    </li>
+                    <li class="menuitem" role="button">
+                        <a href="#the-team">The Team</a>
+                    </li>
+                    <li class="menuitem" role="button">
+                        <a href="#our-work">Our Work</a> 
+                    </li>
+                    <li class="menuitem" role="button">
+                        <a href="#contact">Contact</a> 
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+    </div>
+    </header>
+    <main>
+        <section id="hero" class="flex" aria-label="Hero image">
+            <img src="./img/access-people.jpg" alt="colorful 2d illustration of people" class="cover">
+        </section>
+        <section id="the-team" class="container flex" aria-label="About our team">
+          <div class="flex-40w">
+            <h1>The team</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis mollitia explicabo assumenda maiores! Velit sunt aut at perferendis excepturi beatae ad dolorem fugit hic distinctio.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, a obcaecati. Molestiae, in tempore! Nemo reprehenderit laboriosam nihil consectetur excepturi accusamus asperiores provident aspernatur sit! Dolorum, nihil corporis eveniet, rerum neque voluptatibus accusamus fuga magni ut, vel voluptate veritatis error vero sint modi dicta. Esse eaque nesciunt nihil voluptatem accusamus reiciendis optio provident asperiores. Quod provident vitae a quam.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi ratione, similique totam distinctio reiciendis, repellendus dicta expedita enim ea molestias sunt odio nisi rerum vitae corporis temporibus itaque ut quisquam, laudantium qui eveniet earum voluptate provident! Repellendus porro suscipit et hic quaerat maiores dolorum!</p>
+         </div>
+         <div class="flex-60w">
+            <img src="./img/the-team.jpg" alt="The team working with ideas on a whiteboard">
+         </div>
+        </section>
+        <section id="our-work" aria-label="Contact us trough this contact form">
+            <div class="container flex">
+                <div class="flex-60w">
+                    <img src="./img/accessibility-code.jpg" alt="Picture of a screen with code">
+                </div>
+                <div class="flex-40w">
+                <h1>Our work</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur reprehenderit non quam quis dolores accusamus recusandae harum. Mollitia ab assumenda velit facere aut repellat deserunt minima? Molestias ratione nemo ad ipsa minus, aspernatur facere quo eveniet? Officia asperiores, architecto aliquid soluta illum fuga iusto aliquam culpa ipsum porro eius, impedit nostrum explicabo, dolor nihil.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid similique iure accusamus asperiores. Alias qui perspiciatis expedita voluptatum. Cupiditate odit nesciunt, animi, fugiat laborum voluptate aliquam consectetur fuga eos quo dolorum aut vel distinctio sapiente perferendis laboriosam provident rem, explicabo numquam! Laudantium deserunt at similique assumenda hic tenetur mollitia dignissimos aliquam voluptatum quas possimus ab, placeat qui, saepe quos quidem!</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="flex container">
+            <div class="contact-description">
+                <h2>What can we do for you?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, perferendis veritatis deserunt asperiores quibusdam debitis quo doloribus id soluta similique quisquam, vel fuga quis consectetur repudiandae unde harum illo dolorum, atque in dignissimos. Dicta, est tempora.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit dolor harum accusantium quisquam sit culpa reiciendis facere voluptatibus ut, adipisci autem ducimus dolorum ad esse? Mollitia inventore quisquam possimus et reiciendis ex obcaecati quasi atque deleniti, beatae natus iste reprehenderit similique dicta adipisci deserunt qui modi. Dolor animi deserunt doloremque at expedita, atque rem vel temporibus totam!</p>
+            </div>
+            <div class="contact-form">
+                <form action="" aria-label="Send us an enquiery">
+                    <h3>Send us a request</h3>
+                    <input 
+                        type="text" 
+                        id="fname"
+                        name="fname"
+                        aria-label="First name" 
+                        placeholder="Enter your first name"
+                        required
+                        >
+                        
+                    <input 
+                        type="text" 
+                        id="lname"
+                        name="lname"
+                        aria-label="Last name" 
+                        placeholder="Enter your last name"
+                        required
+                        >
+                    <input 
+                        class="required"
+                        type="email" 
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        autocapitalize="off" 
+                        spellcheck="false"
+                        placeholder="Enter your e-mail"
+                        required
+                        >
+                    <input 
+                        class="required"
+                        type="text" 
+                        id="subject"
+                        name="subject" 
+                        placeholder="Subject"
+                        required
+                        >
+                    <label for id="message">Message: </label><br>
+                    <input 
+                        class="required textarea"
+                        type="textarea "
+                        rows="10"
+                        id="message"
+                        name="message" 
+                        placeholder=""
+                        required
+                        >
+
+                    <button class="align-right">Send request</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container flex">
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="">Accessibility General</a></li>
+                    <li><a href="">Fundamental Accesibility</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+  
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Classes</h4>
+                <ul>
+                    <li><a href="">Accessibility General</a></li>
+                    <li><a href="">Fundamental Accesibility</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+  
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tutorials</h4>
+                <ul>
+                    <li><a href="">Accessibility General</a></li>
+                    <li><a href="">Fundamental Accesibility</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+  
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Adress</h4>
+                <ul>
+                    <li><a href="">Accessibility General</a></li>
+                    <li><a href="">Fundamental Accesibility</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+  
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
