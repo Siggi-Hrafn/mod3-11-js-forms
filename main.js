@@ -8,8 +8,8 @@ let name = id("fname"),
     message = id("message"),
 
     errorMsg = classes("error"),
-  successIcon = classes("success-icon"),
-  failureIcon = classes("failure-icon");
+    successIcon = classes("success-icon"),
+    failureIcon = classes("failure-icon");
 
   
 form.addEventListener("submit", (e) => {
